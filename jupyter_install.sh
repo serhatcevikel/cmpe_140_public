@@ -1,5 +1,13 @@
 #/bin/bash
 
+# install pip, jupyter and R kernel on ubuntu
+# install the kernel globally (not for a user)
+# make the script executable by chmod +x jupyter_install.sh
+# and run as sudo ./jupyter_install.sh
+
+# Serhat Cevikel
+
+
 # update/upgrade
 apt-get update
 apt-get -y upgrade
@@ -18,10 +26,6 @@ R --vanilla <<HERE
         install.packages('devtools')
     }
 
-    if (!require('data.table', character.only = T, quietly = T)) {
-        install.packages('data.table')
-    }
-    
     if (!require('IRkernel', character.only = T, quietly = T)) {
         devtools::install_github('IRkernel/IRkernel')
         IRkernel::installspec(user = FALSE)
