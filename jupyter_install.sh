@@ -12,11 +12,14 @@
 apt-get update
 apt-get -y upgrade
 
-apt-get install -y python-dev python-pip r-base r-base-dev
+apt-get install -y python-dev python-pip r-base r-base-dev python3-pip
 
-## install jupyter notebook
+## install jupyter notebook and python kernels
 pip install --upgrade pip
 pip install jupyter
+
+python3 -m pip install ipykernel
+python3 -m ipykernel install
 
 ## install R kernel for jupyter
 R --vanilla <<HERE
