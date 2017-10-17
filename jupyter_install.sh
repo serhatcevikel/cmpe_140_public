@@ -15,7 +15,8 @@ apt-get -y upgrade
 apt-get install -y build-essential python3-dev python3-pip \
     python-dev python-pip r-base r-base-dev \
     libcurl4-openssl-dev \
-    libssl-dev libcurl3-dev libcurl4-gnutls-dev curl
+    libssl-dev libcurl3-dev curl 
+#libcurl4-gnutls-dev curl
 
 
 ## install jupyter notebook and python kernels
