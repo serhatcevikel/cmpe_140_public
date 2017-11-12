@@ -22,8 +22,10 @@
 # So that you minimize errors
 
 
-## select a self-explanatory name for your function
-## you may briefly explain its intent with a comment line above
+# select a self-explanatory name for your function
+# you may briefly explain its intent with a comment line above
+# note that, for complex variable names incorporating multiple words, separate them with an underscore "_", not a dot "."
+# Dot has a special meaning in the context of object oriented programming
 largest_prime_factor <- function(number = 1000) # or you can write a comment at the end of the line
 # but it is better not the enlarge the reading span of your code: So extend your code vertically, not horizontally
 # it is better to have more lines, but not have longer lines
