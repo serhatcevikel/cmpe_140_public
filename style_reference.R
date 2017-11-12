@@ -47,20 +47,20 @@ largest_prime_factor <- function(number = 1000) # or you can write a comment at 
     # and make sure that in each "for" or "while" loop, you introduce a variable name that was not previously used inside the function
     # and make sure not to refer to global variable: variables outside the scope of your function (e.g. variables that were introduced before you started your function)
     # if you have to use those global variables, pass them using arguments of your function
-    for (factorx in 2:sqrt(number)) # for1: you can enumerate nested "for" or "while" loops as such: for1, for2, etc, to better track them
+    for (factorx in 2:sqrt(number)) # for1: inside the comments you can enumerate nested "for" or "while" loops as such: for1, for2, etc, to better track them
     {
 
         # it is better to put an empty line before and after the blocks to delimit them from the rest of the code
         # this makes the code more readable and blocks more identifiable
         # please put a white space before and after operators such as "%%", "==", "&", "|", "!="
-        while (number %% factorx == 0) # while1, again you can enumerate the loops
+        while (number %% factorx == 0) # while1, again inside the comments you can enumerate the while loops
         {
             # put a space before and after assignment operator "<-"
             # try to do just one thing in a line, don't stuff a line with multiple functions if you can divide them across lines
             number <- number / factorx
             
             # again, wrap your code with empty lines for easier reading
-            if (number == 1) # if1: enumarate your conditional statements to track nested ones
+            if (number == 1) # if1: inside the commands enumarate your conditional statements to track nested ones
             # always separate lines after a control struct (for, while, if, etc) delimiting with curly braces
             {
                 # when you want your code to return a value and stop, then use "return" function
@@ -74,7 +74,7 @@ largest_prime_factor <- function(number = 1000) # or you can write a comment at 
             # delimit it like that:
             # else
             # {
-            # some code to be executed when the condition is false
+            #       some code to be executed when the condition is false (indented)
             # }
 
         } # close while1: see, you have limited chance to make a mistake opening and closing your blocks with curlies this way
